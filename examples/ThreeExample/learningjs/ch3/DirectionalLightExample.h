@@ -1,7 +1,7 @@
 #ifndef DIRECTIONALLIGHT_EXAMPLE_H
 #define DIRECTIONALLIGHT_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/helpers/CameraHelper.h>
 class DirectionalLightExample : public ThreeDemoClass {
 public:

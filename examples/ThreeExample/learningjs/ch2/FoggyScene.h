@@ -1,6 +1,6 @@
 #ifndef FOGGY_SCENE_H
 #define FOGGY_SCENE_H
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/objects/Mesh.h>
 #include <three/lights/Light.h>
 #include <memory>

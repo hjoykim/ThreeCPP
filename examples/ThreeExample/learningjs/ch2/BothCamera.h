@@ -1,6 +1,6 @@
 #ifndef BOTH_CAMERA_H
 #define BOTH_CAMERA_H
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/objects/Mesh.h>
 #include <three/objects/Group.h>
 #include <three/lights/Light.h>

@@ -66,23 +66,34 @@ void BasicMeshMaterialExample::init()
 	meshMaterial->fog = true;
 	meshMaterial->colorWrite = true;
 
-	thread thread1([&](const string& filepath) 
-		{
-			std::string dir = std::filesystem::current_path().parent_path().parent_path().string();
-			OBJLoader loader;
-			gopher = loader.load(dir + "\\assets\\models\\gopher\\" + filepath);
-			gopher->traverse([&](Object3D& o) {
-				o.material = meshMaterial;
-				if (instanceOf<Mesh>(&o) && o.materials.size() > 1) {
-					int size = o.materials.size();
-					for (int i = 0; i < size; i++)
-						o.materials.push_back(meshMaterial);
-				}
-				});
-			gopher->scale.set(4, 4, 4);
+	//thread thread1([&](const string& filepath) 
+	//	{
+	//		OBJLoader loader;
+	//		gopher = loader.load("../../assets/models/gopher/" + filepath);
+	//		gopher->traverse([&](Object3D& o) {
+	//			o.material = meshMaterial;
+	//			if (instanceOf<Mesh>(&o) && o.materials.size() > 1) {
+	//				int size = o.materials.size();
+	//				for (int i = 0; i < size; i++)
+	//					o.materials.push_back(meshMaterial);
+	//			}
+	//			});
+	//		gopher->scale.set(4, 4, 4);
+	//	}
+	//	,string("gopher.obj"));
+	//thread1.join();
+
+	OBJLoader loader;
+	gopher = loader.load("../../assets/models/gopher/gopher.obj");
+	gopher->traverse([&](Object3D& o) {
+		o.material = meshMaterial;
+		if (instanceOf<Mesh>(&o) && o.materials.size() > 1) {
+			int size = o.materials.size();
+			for (int i = 0; i < size; i++)
+				o.materials.push_back(meshMaterial);
 		}
-		,string("gopher.obj"));
-	thread1.join();
+		});
+	gopher->scale.set(4, 4, 4);
 	sphere = Mesh::create(sphereGeometry, meshMaterial);
 	cube = Mesh::create(cubeGeometry, meshMaterial);
 	plane = Mesh::create(planeGeometry, meshMaterial);

@@ -1,6 +1,6 @@
 #ifndef MATERIAL_LIGHT_H
 #define MATERIAL_LIGHT_H
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/lights/Light.h>
 #include <memory>
 class MaterialLight : public ThreeDemoClass {

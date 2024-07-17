@@ -1,6 +1,6 @@
 #ifndef BASIC_SCENE_H
 #define BASIC_SCENE_H
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/objects/Mesh.h>
 #include <three/lights/Light.h>
 #include <memory>

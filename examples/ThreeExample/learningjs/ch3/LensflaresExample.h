@@ -1,7 +1,7 @@
 #ifndef LENSFLARES_EXAMPLE_H
 #define LENSFLARES_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/loaders/TextureLoader.h>
 #include <imgui/imgui.h>
 #include <iostream>
@@ -26,7 +26,7 @@ public:
 
 		scene = std::make_shared<Scene>();
 
-		Texture::ptr textureGrass = TextureLoader::load(".../../../assets/textures/ground/grasslight-big.jpg");
+		Texture::ptr textureGrass = TextureLoader::load("../../assets/textures/ground/grasslight-big.jpg");
 		textureGrass->wrapS = Wrapping::RepeatWrapping;
 		textureGrass->wrapT = Wrapping::RepeatWrapping;
 		textureGrass->repeat.set(10, 10);
@@ -97,8 +97,8 @@ public:
 
 		scene->add(spotLight);
 
-		auto textureFlare0 = TextureLoader::load("./assets/textures/flares/lensflare0.png");
-		auto textureFlare1 = TextureLoader::load("./assets/textures/flares/lensflare3.png");
+		auto textureFlare0 = TextureLoader::load("../../assets/textures/flares/lensflare0.png");
+		auto textureFlare1 = TextureLoader::load("../../assets/textures/flares/lensflare3.png");
 
 
 		auto flareColor = Color(0xffaacc);

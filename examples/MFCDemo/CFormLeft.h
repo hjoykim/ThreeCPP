@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 
 
 class CFormLeft : public CFormView

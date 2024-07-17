@@ -1,7 +1,7 @@
 #ifndef SPOTLIGHT_EXAMPLE_H
 #define SPOTLIGHT_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/helpers/CameraHelper.h>
 #include <three/helpers/SpotLightHelper.h>
 class SpotLightExample : public ThreeDemoClass {

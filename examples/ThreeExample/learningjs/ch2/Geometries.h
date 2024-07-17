@@ -1,6 +1,6 @@
 #ifndef GEOMETRIES_EXAMPLE_H
 #define GEOMETRIES_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/objects/Mesh.h>
 #include <three/lights/Light.h>
 #include <memory>

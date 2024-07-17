@@ -1,7 +1,7 @@
 #ifndef BASIC2D_GEOMETRIES_PLANE_H
 #define BASIC2D_GEOMETRIES_PLANE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/core/BufferGeometry.h>
 #include <three/Materials.h>
 #include <three/objects/Mesh.h>

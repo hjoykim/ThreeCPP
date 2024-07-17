@@ -1,7 +1,7 @@
 #ifndef POINTLIGHT_EXAMPLE_H
 #define POINTLIGHT_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/helpers/PointLightHelper.h>
 #include <three/helpers/CameraHelper.h>
 class PointLightExample : public ThreeDemoClass {

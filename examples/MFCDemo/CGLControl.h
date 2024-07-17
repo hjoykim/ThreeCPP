@@ -1,6 +1,6 @@
 #pragma once
 #include <afxwin.h>
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <imgui/imgui.h>
 #pragma comment(lib,"OpenGL32.lib")
 #ifdef GLES
@@ -35,7 +35,7 @@ private :
 public :
     float m_fAspect;
     bool m_isAnimate = true;
-    ThreeDemoClass* demo;
+    ThreeDemoClass* demo = nullptr;
     bool show_demo_window = true;
     bool show_another_window = true;
 

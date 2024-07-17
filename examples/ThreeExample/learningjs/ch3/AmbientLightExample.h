@@ -1,7 +1,7 @@
 #ifndef AMBIENTLIGHT_EXAMPLE_H
 #define AMBIENTLIGHT_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <imgui\imgui.h>
 
 class AmbientLightExample : public ThreeDemoClass {

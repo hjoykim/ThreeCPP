@@ -1,7 +1,7 @@
 #ifndef HEMISPHERELIGHT_EXAMPLE_H
 #define HEMISPHERELIGHT_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/loaders/TextureLoader.h>
 #include <imgui/imgui.h>
 #include <iostream>
@@ -28,7 +28,7 @@ public:
 
 		scene = std::make_shared<Scene>();
 
-		Texture::ptr textureGrass = TextureLoader::load("../../../assets/textures/ground/grasslight-big.jpg");
+		Texture::ptr textureGrass = TextureLoader::load("../../assets/textures/ground/grasslight-big.jpg");
 		textureGrass->wrapS = Wrapping::RepeatWrapping;
 		textureGrass->wrapT = Wrapping::RepeatWrapping;
 		textureGrass->repeat.set(10, 10);

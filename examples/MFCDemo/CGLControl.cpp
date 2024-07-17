@@ -133,7 +133,7 @@ void CGLControl::OnSize(UINT nType, int cx, int cy)
 	if (0 >= cx || 0 >= cy || nType == SIZE_MINIMIZED) return;
 	m_fAspect = (float)cy / (float)cx;
 	if (GetDC()->GetSafeHdc()) {
-		if (demo) {
+		if (demo!=nullptr) {
 			if (demo->controller)
 				demo->controller->sizeChanged(Vector4(0, 0, cx, cy));
 

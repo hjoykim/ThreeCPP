@@ -1,7 +1,7 @@
 #ifndef BASIC_MESH_MATERIAL_EXAMPLE_H
 #define BASIC_MESH_MATERIAL_EXAMPLE_H
-#include <ecore/ThreeDemoModel.h>
-#include <ecore/ExampleUtil.h>
+#include <ThreeDemoModel.h>
+#include <ExampleUtil.h>
 #include <three/Materials.h>
 #include <three/objects/Mesh.h>
 #include <three/geometries/BoxGeometry.h>

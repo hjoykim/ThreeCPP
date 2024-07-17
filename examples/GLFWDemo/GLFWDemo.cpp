@@ -35,7 +35,7 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 void mouse_scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
-#include <ecore/InitApplication.h>
+#include <InitApplication.h>
 
 
 ImGuiIO* demoIO;
@@ -91,10 +91,10 @@ int main()
     ImGui_ImplOpenGL3_Init(glsl_version);
 
     io.Fonts->AddFontDefault();
-    io.Fonts->AddFontFromFileTTF("Roboto-Medium.ttf", 16.0f);
-    io.Fonts->AddFontFromFileTTF("Cousine-Regular.ttf", 15.0f);
-    io.Fonts->AddFontFromFileTTF("DroidSans.ttf", 16.0f);
-    io.Fonts->AddFontFromFileTTF("ProggyTiny.ttf", 10.0f);
+    io.Fonts->AddFontFromFileTTF("../../assets/fonts/Roboto-Medium.ttf", 16.0f);
+    io.Fonts->AddFontFromFileTTF("../../assets/fonts/Cousine-Regular.ttf", 15.0f);
+    io.Fonts->AddFontFromFileTTF("../../assets/fonts/DroidSans.ttf", 16.0f);
+    io.Fonts->AddFontFromFileTTF("../../assets/fonts/ProggyTiny.ttf", 10.0f);
 
    
     //GLRenderer renderer;

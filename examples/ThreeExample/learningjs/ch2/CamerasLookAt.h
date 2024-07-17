@@ -1,6 +1,6 @@
 #ifndef CAMERAS_LOOA_AT
 #define CAMERAS_LOOK_AT
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/objects/Mesh.h>
 #include <three/objects/Group.h>
 #include <three/lights/Light.h>

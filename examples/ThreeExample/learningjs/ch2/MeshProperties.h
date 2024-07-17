@@ -1,6 +1,6 @@
 #ifndef MESH_PROPERTIES_H
 #define MESH_PROPERTIES_H
-#include <ecore/ThreeDemoModel.h>
+#include <ThreeDemoModel.h>
 #include <three/objects/Mesh.h>
 #include <three/objects/Group.h>
 #include <three/lights/Light.h>
