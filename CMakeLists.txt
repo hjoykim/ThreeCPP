@@ -224,6 +224,7 @@ target_compile_options(GLFWDemo PRIVATE "/MTd")
 target_include_directories(GLFWDemo PRIVATE ${ThreeCPPSourcesFolder} ${ThreeCPPExternalInclude} ${ThreeExampleFolder})
 target_link_libraries(GLFWDemo PRIVATE ThreeCPP ThreeExample glfw)
 set_target_properties(GLFWDemo PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}")	
+set_property(TARGET GLFWDemo PROPERTY VS_DEBUGGER_WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR})
 
 
 
@@ -247,6 +248,8 @@ set(CMAKE_MFC_FLAG 1)
 target_compile_options(MFCDemo PRIVATE "/MTd")
 target_include_directories(MFCDemo PUBLIC ${ThreeCPPSourcesFolder} ${ThreeCPPExternalInclude} ${ThreeExampleFolder} )
 target_link_libraries (MFCDemo PRIVATE ThreeCPP ThreeExample)
+set_target_properties(MFCDemo PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}")
+set_property(TARGET MFCDemo PROPERTY VS_DEBUGGER_WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR})
 file(COPY "${CMAKE_CURRENT_LIST_DIR}/external/glew/Debug" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 file(COPY "${CMAKE_CURRENT_LIST_DIR}/external/glew/Release" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
