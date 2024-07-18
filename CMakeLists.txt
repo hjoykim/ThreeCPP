@@ -5,15 +5,9 @@ set (CMAKE_CONFIGURATION_TYPES Debug;Release;RelWithDebInfo;MinSizeRel)
 add_definitions (-DUNICODE -D_UNICODE -DGLAD -DNOMINMAX)
 
 
-#if(MSVC)
-#    add_compile_options(
-#        $<$<CONFIG:>:/MT> #---------|
-#        $<$<CONFIG:Debug>:/MTd> #---|-- Statically link the runtime libraries
-#        $<$<CONFIG:Release>:/MT> #--|
-#    )
-#endif()
-add_subdirectory(external/glfw)
 
+add_subdirectory(external/glfw)
+target_compile_options(glfw PRIVATE "/MTd")
 project(ThreeCPP)
 set(CMAKE_CXX_STANDARD 17)
 
