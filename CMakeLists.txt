@@ -5,7 +5,9 @@ set (CMAKE_CONFIGURATION_TYPES Debug;Release;RelWithDebInfo;MinSizeRel)
 add_definitions (-DUNICODE -D_UNICODE -DGLAD -DNOMINMAX)
 
 
-
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/glfw)
 target_compile_options(glfw PRIVATE "/MTd")
 project(ThreeCPP)
