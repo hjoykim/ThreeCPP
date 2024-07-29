@@ -1,3 +1,6 @@
+## DEPRECATED
+>This repository is no longer updated. If you are interested in three.js C++ porting,
+>Please refer to this site (https://github.com/markaren/threepp)
 # ThreeCpp
 three.js is a very powerful, simple and useful OpenGL Graphics library.
 I always want to express my deep appreciation to the team that created this library.(https://github.com/mrdoob/three.js).
